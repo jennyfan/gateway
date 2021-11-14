@@ -1,0 +1,141 @@
+/* Font imports */
+@font-face {
+  font-family: 'Geogrotesque';
+  src: url('fonts/Geogrotesque-R.woff2') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geogrotesque';
+  src: url('fonts/Geogrotesque-M.woff2') format('woff');
+  font-weight: 600;
+  font-style: bold;
+}
+
+
+/* Global settings */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --clr-light: #F8F8F8;
+  --clr-dark: #05162F;
+  --clr-primary1: #3464C3;
+  --clr-primary2: #41679E;
+  --clr-primary3: #A1BFEB;
+  --clr-secondary1: #F8E441;
+  --clr-secondary2: #FFEDBF;
+  --clr-accent: #FA6C32;
+  --font: 'Geogrotesque', 'Roboto', sans-serif;
+}
+
+
+/* Typography */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 2.5em;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 2em;
+  font-weight: bold;
+}
+.title {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: bold;
+  color: var(--clr-dark);
+}
+p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: normal;
+  color: var(--clr-dark);
+}
+p.small {
+  font-size: 1.275rem;
+  line-height: 2rem;
+  font-weight: normal;
+  color: var(--clr-dark);
+}
+
+a, a:link, a:visited {
+  color: var(--clr-primary2);
+  text-decoration: none;
+}
+
+
+.wrapper { 
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+}
+section {
+  display: grid;
+  gap: 0;
+  flex-shrink: 1;
+  flex-grow: 1;
+  position: relative;
+  height: 100vh;
+}
+
+.section_whole {
+
+}
+
+.section_half {
+  align-self: start;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+
+/* Buttons */
+.btn {
+  font-family: var(--font);
+  text-decoration: none;
+  padding: 0.5em;
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  display: inline-block;
+  border: 1px solid var(--clr-dark);
+  border-radius: 3px;
+  box-shadow: 5px 5px 0 0 var(--clr-primary3); 
+}
+.btn .primary {
+  color: var(--clr-light);
+  background-color: var(--clr-primary1);
+}
+.btn .secondary {
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+}
