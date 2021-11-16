@@ -1,16 +1,23 @@
 /* Font imports */
 @font-face {
   font-family: 'Geogrotesque';
-  src: url('fonts/Geogrotesque-R.woff2') format('woff');
-  font-weight: 300;
+  src: url('Geogrotesque-Medium.woff2') format('woff2'),
+      url('Geogrotesque-Medium.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: 'Geogrotesque';
-  src: url('fonts/Geogrotesque-M.woff2') format('woff');
-  font-weight: 500;
-  font-style: bold;
+  src: url('Geogrotesque-Regular.woff2') format('woff2'),
+      url('Geogrotesque-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
+
 
 
 /* Global settings */
@@ -31,7 +38,7 @@
   --clr-secondary1: #F8E441;
   --clr-secondary2: #FFEDBF;
   --clr-accent: #FA6C32;
-  --font: 'Geogrotesque', 'Roboto', sans-serif;
+  --font: 'Geogrotesque', 'Roboto Condensed', 'Roboto', 'Arial', sans-serif;
 }
 
 
